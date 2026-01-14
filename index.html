@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mu Viu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AGE GATE -->
+<div id="ageGate" class="center">
+  <h1 class="logo">Mu Viu</h1>
+  <p>Are you 18 years or older?</p>
+  <button class="btn green" onclick="confirmAge(true)">YES</button>
+  <button class="btn red" onclick="confirmAge(false)">NO</button>
+</div>
+
+<!-- ACCESS DENIED -->
+<div id="denied" class="center hidden">
+  <h1>ACCESS DENIED</h1>
+  <p>Under 18 Not Allowed</p>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" class="hidden">
+  <header>
+    <h1 class="logo">Mu Viu</h1>
+    <nav>
+      <button class="btn green" onclick="showLogin()">Login</button>
+      <button class="btn green" onclick="showUpload()">Upload</button>
+    </nav>
+  </header>
+
+  <section id="videos"></section>
+</div>
+
+<!-- LOGIN -->
+<div id="login" class="center hidden">
+  <h2>Login</h2>
+  <input id="email" type="email" placeholder="Email">
+  <button class="btn green" onclick="login()">Login</button>
+</div>
+
+<!-- UPLOAD -->
+<div id="upload" class="center hidden">
+  <h2>Upload Video</h2>
+  <input id="title" placeholder="Title">
+  <input id="file" type="file" accept="video/*">
+  <button class="btn green" onclick="uploadVideo()">Upload</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
+  
