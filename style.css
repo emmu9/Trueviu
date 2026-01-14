@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("kenya-flag.svg") no-repeat center;
+  background-size: 60%;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  color: green;
+  font-size: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid green;
+}
+
+nav button {
+  margin-left: 10px;
+}
+
+#videos {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video {
+  border: 1px solid green;
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.green {
+  background: green;
+  color: white;
+}
+
+.red {
+  background: red;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 250px;
+  background: black;
+  color: white;
+  border: 1px solid green;
+    }
